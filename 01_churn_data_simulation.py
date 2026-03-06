@@ -2,7 +2,7 @@
 # Objective: Generate synthetic policyholder data to demonstrate Churn Prediction (Classification).
 # We embed hidden logic where high support calls and payment delays lead to high churn probability.
 
-from pyspark import SparkSession
+from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, when, rand, randn, round
 
 spark = SparkSession.builder.appName("Concentrix_Churn_Simulation").getOrCreate()
